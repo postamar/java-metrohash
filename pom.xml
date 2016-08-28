@@ -16,7 +16,7 @@
 
   <groupId>com.adgear</groupId>
   <artifactId>metrohash</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>java-metrohash</name>
   <url>https://www.github.com/postamar/java-metrohash</url>
@@ -109,7 +109,15 @@
           <additionalparam>-Xdoclint:none</additionalparam>
           <show>public</show>
           <locale>en</locale>
-        </configuration>
+      </configuration>
+      <executions>
+        <execution>
+          <id>attach-javadocs</id>
+          <goals>
+            <goal>jar</goal>
+          </goals>
+        </execution>
+      </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
